@@ -7,4 +7,3 @@ catEl.forEach(function (categories) {
     console.log("Elements:", categories.lastElementsChild.length);
 })
 
-console.log(catEl)
