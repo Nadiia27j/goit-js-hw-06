@@ -17,6 +17,7 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 console.log(galleryEl);
 
+
 const itemEl = document.createElement('li');
 itemEl.classList.add('gallery__item');
 
