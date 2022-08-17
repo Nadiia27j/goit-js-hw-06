@@ -16,10 +16,8 @@ const images = [
 
 
 const galleryEl = document.querySelector('.gallery');
-// galleryEl.style.display = "flex";
 console.log(galleryEl);
  
-
 
 const elements = images.map((image) => `<li class="gallery__item"><img class"gallery__img" src="${image.url} alt="${image.alt}" width="320" height="320"></li>`);
 

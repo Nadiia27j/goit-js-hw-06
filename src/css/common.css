@@ -27,6 +27,6 @@ button {
   display: flex;
 }
 
-.gallery__item:not(.last-child) {
+.gallery__item:not(:last-child) {
  margin-right: 30px;
 }
