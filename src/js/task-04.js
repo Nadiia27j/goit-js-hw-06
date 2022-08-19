@@ -1,17 +1,48 @@
-// document.addEventListener("keydown", event => {
-//     console.log("Keydown: ", event);
-//   });
-  
-//   document.addEventListener("keyup", event => {
-//     console.log("Keyup: ", event);
-//   });
+
+const refs = {
+  btnDecrement: document.querySelector('button[data-action="decrement"]'),
+  valueEl:  document.querySelector('#value'),
+  btnIncrement: document.querySelector('button[data-action="increment"]'),
+};
 
 
 
-  document.addEventListener("keydown", event => {
-    event.preventDefault();
-  
-    if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
-      console.log("«Ctrl + s» or «Command + s» combo");
-    }
-  });
+refs.btnDecrement.addEventListener('click', onBtnDecrementClick);
+refs.btnIncrement.addEventListener('click', onBtnIncrementClick);
+
+let counterValue = 0;
+
+
+function onBtnDecrementClick() {
+  counterValue -= 1;
+  refs.valueEl.textContent = counterValue;
+}
+
+
+function onBtnIncrementClick() {
+  counterValue -= 1;
+  refs.valueEl.textContent = counterValue;
+}
+
+
+
+// const btnDecrement = document.querySelector('[data-action="decrement"]');
+// const valueEl =  document.querySelector('#value');
+// const btnIncrement = document.querySelector('[data-action="increment"]');
+
+// btnDecrement.addEventListener('click', onBtnDecrementClick);
+// btnIncrement.addEventListener('click', onBtnIncrementClick);
+
+// let counterValue = 0;
+
+
+// function onBtnDecrementClick() {
+//   counterValue -= 1;
+//   valueEl.textContent = counterValue;
+// }
+
+
+// function onBtnIncrementClick() {
+//   counterValue -= 1;
+//   valueEl.textContent = counterValue;
+// }
