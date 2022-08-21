@@ -33,6 +33,15 @@ function onFormSubmit (event) {
 
 
 
+
+
+
+
+
+
+
+
+
 // var 2
 
 // const form = document.querySelector('.login-form');
@@ -48,6 +57,9 @@ function onFormSubmit (event) {
  
 //   }else{
 //     const formElements = event.currentTarget.elements;
+
+        // const email = event.currentTarget.elements.email.value;
+       // const pass = event.currentTarget.elements.password.value;
 
 //     const mail =  formElements.email.value;
 //     const password = formElements.password.value;
